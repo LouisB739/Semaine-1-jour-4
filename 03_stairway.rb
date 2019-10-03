@@ -4,38 +4,49 @@ class Array
   end
 end
 
+def dices
+
+	dice = rand(1..6)
+	return dice
+end
+	
+
 def jeu_video
+	
 	plateau = 10
 	position_joueur = 0
 	tour = 0
+	
+
 
 while plateau != position_joueur
-	dice = rand(1..6)
+	dicez = dices
 
-	if dice == 5 || dice == 6
+	if dicez == 5 || dicez == 6
 		position_joueur += 1
 		tour += 1
 		puts "vous êtes à la marche #{position_joueur}"
+		
 	
 
-	elsif dice == 1
+	elsif dicez == 1
 		position_joueur -=1
 		tour += 1
 		puts "vous êtes à la marche #{position_joueur}"
+		
 		
 	else
 		"Vous ne bougez pas vous êtes à la marche #{position_joueur}"
 		tour += 1
 		
-			
+		
 end
 
 
 end
-
-return tour
-
+return tour	
 end
+
 
 def average_finish_time()
 
