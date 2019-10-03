@@ -52,7 +52,7 @@ nb.times do
 	s << n.to_f
 end
 
-avera = s.averages
+avera = s.average
 
 puts "En moyenne il faut #{avera} lancé de dés pour arriver à la fin"
 	
